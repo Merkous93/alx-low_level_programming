@@ -1,21 +1,14 @@
 #include <stdio.h>
-#include <string.h>
-#include <fcntl.h>
 #include <unistd.h>
 
 /**
- * main - Entry point
- *
- * Description: Prints an error message to stderr
- *
- * Return: Always 1 (Failure)
- */
+* main - Entry point
+*
+* Return: Always 1 (Success)
+*/
 int main(void)
 {
-	char msg[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	int fd = open("/dev/stderr", O_WRONLY);
-	write(fd, msg, strlen(msg));
-	close(fd);
+	write(2,
+	"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
-
