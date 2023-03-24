@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> b9157422b9e7cb8a4cbd40fba3ac839a7105aa4c
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -27,5 +30,9 @@ printf("%d is zero\n", n);
 }
 return (0);
 }
+<<<<<<< HEAD
 
+
+=======
+>>>>>>> b9157422b9e7cb8a4cbd40fba3ac839a7105aa4c
 
