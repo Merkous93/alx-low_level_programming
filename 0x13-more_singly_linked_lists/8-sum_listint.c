@@ -1,17 +1,18 @@
 #include "lists.h"
+
 /**
- * listint_len - check the code
- * @h: a
+ * sum_listint - check the code
+ * @head: a
  * Return: Always 0.
  */
-size_t listint_len(const listint_t *h)
+int sum_listint(listint_t *head)
 {
-	const listint_t *nav = h;
+	listint_t *nav = head;
 	size_t count = 0;
 
 	while (nav)
 	{
-		count++;
+		count += nav->n;
 		nav = nav->next;
 	}
 	return (count);
